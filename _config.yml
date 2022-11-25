@@ -21,7 +21,7 @@ title: "Jinwook's blog"
 description: "What's important is an unbreakable heart."
 baseurl: "" # the subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: "/images/Jinwook_profile.png" # path of site logo, e.g. "/assets/images/logo.png"
+logo: "./images/Jinwook_profile.jpg" # path of site logo, e.g. "/assets/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
 words_per_minute: 200
@@ -106,7 +106,7 @@ defaults:
 # Site Author
 author:
   name: Shinjinwook
-  picture: /images/Jinwook_profile.jpg
+  picture: ./images/Jinwook_profile.jpg
   email: jinwook2765@naver.com
   links:
     - title: Instagram
