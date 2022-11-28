@@ -1,10 +1,8 @@
-# [So Simple Jekyll Theme][1]
+# [jen454.github.io][1]
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](https://raw.githubusercontent.com/mmistakes/so-simple-theme/master/LICENSE)
+![screenshot](/images/homescreen.png)
+
 [![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-so-simple.svg?style=flat-square)](https://rubygems.org/gems/jekyll-theme-so-simple)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?style=flat-square&logo=paypal)](https://www.paypal.me/mmistakes)
-[![Donate to this project using Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/mmistakes)
 
 So Simple is a simple [Jekyll theme](https://jekyllrb.com/docs/themes/) for your words and pictures. Built to provide:
 
@@ -28,7 +26,7 @@ So Simple is a simple [Jekyll theme](https://jekyllrb.com/docs/themes/) for your
 [1]: https://mmistakes.github.io/so-simple-theme/
 [2]: screenshot.png "site preview"
 
-## Sample Pages
+## Build 과정
 
 | Description |    |    |
 | ----------- | -- | -- |
