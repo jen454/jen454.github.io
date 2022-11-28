@@ -44,6 +44,7 @@ comment:
     shortname1: "git" # Disqus shortname, e.g. "my_disqus_shortname"
     shortname2: "github"
     shortname3: "markdown"
+    shortname4: "google-analytics"
 twitter:
   username: mmistakes # site's Twitter username
 
