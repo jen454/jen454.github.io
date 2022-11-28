@@ -1,65 +1,40 @@
 # [jen454.github.io][1]
 
+## **우분투 리눅스 환경에서 깃블로그 만들기**
+
 ![screenshot](/images/homescreen.png)
-
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
-
-So Simple is a simple [Jekyll theme](https://jekyllrb.com/docs/themes/) for your words and pictures. Built to provide:
-
-* A variety of layouts with clean and readable typography.
-* [Microformats](http://microformats.org/wiki/microformats2) markup to make post content machine-readable and discoverable.
-* Disqus Comments and Google Analytics support.
-* SEO best practices via [Jekyll SEO Tag][jekyll-seo-tag].
-* Options to customize the theme and make it your own.
-
-**If you enjoy this theme, please consider sponsoring:**
-
-[!["Buy Me A Coffee"](https://user-images.githubusercontent.com/1376749/120938564-50c59780-c6e1-11eb-814f-22a0399623c5.png)](https://www.buymeacoffee.com/mmistakes)
- [![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
-
-:sparkles: **See what's new in the [CHANGELOG](CHANGELOG.md).** :blue_book: **[v2 documentation](README-OLD.md)**.
-
-[![So Simple live preview][2]][1]
-
-![So Simple layouts](screenshots.jpg)
-
-[1]: https://mmistakes.github.io/so-simple-theme/
-[2]: screenshot.png "site preview"
 
 ## Build 과정
 
-| Description |    |    |
-| ----------- | -- | -- |
-| A post with a large hero image. | [Preview][post-hero-preview] | [Source][post-hero-source] |
-| A post with a variety of common HTML elements showing how the theme styles them. | [Preview][post-html-elements-preview] | [Source][post-html-elements-source] |
-| Post displaying highlighted code. | [Preview][post-syntax-preview] | [Source][post-syntax-code] |
-| A post displaying images with a variety of alignments. | [Preview][post-image-alignment-preview] | [Source][post-image-alignment-source] |
-| All posts grouped by year. | [Preview][posts-year-preview] | [Source][posts-year-source] |
-| All posts grouped by category. | [Preview][posts-category-preview] | [Source][posts-category-source] |
-| All posts grouped by tag. | [Preview][posts-tag-preview] | [Source][posts-tag-source] |
-| Category page. | [Preview][category-page-preview] | [Source][category-page-source] |
-| Listing of documents in grid view. | [Preview][grid-view-preview] | [Source][grid-view-source] |
+### 1. Repository 생성
+- Github에서 <username>.github.io 이름의 Repository 생성
 
-[post-hero-preview]: https://mmistakes.github.io/so-simple-theme/layout/layout-hero-image/
-[post-hero-source]: docs/_posts/2012-03-14-layout-hero-image.md
-[post-html-elements-preview]: https://mmistakes.github.io/so-simple-theme/markup/markup-html-elements-and-formatting/
-[post-html-elements-source]: docs/_posts/2013-01-11-markup-html-elements-and-formatting.md
-[post-syntax-preview]: https://mmistakes.github.io/so-simple-theme/markup-syntax-highlighting/
-[post-syntax-code]: docs/_posts/2013-08-16-markup-syntax-highlighting.md
-[post-image-alignment-preview]: https://mmistakes.github.io/so-simple-theme/markup/markup-image-alignment/
-[post-image-alignment-source]: docs/_posts/2013-01-10-markup-image-alignment.md
-[posts-year-preview]: https://mmistakes.github.io/so-simple-theme/posts/
-[posts-year-source]: docs/posts.md
-[posts-category-preview]: https://mmistakes.github.io/so-simple-theme/categories/
-[posts-category-source]: docs/categories.md
-[posts-tag-preview]: https://mmistakes.github.io/so-simple-theme/tags/
-[posts-tag-source]: docs/tags.md
-[category-page-preview]: https://mmistakes.github.io/so-simple-theme/categories/edge-case/
-[category-page-source]: docs/edge-case.md
-[grid-view-preview]: https://mmistakes.github.io/so-simple-theme/recipes/
-[grid-view-source]: docs/recipes.md
+### 2. Local-Remote Repository 연동
+1. Remote Repository의 주소를 복사
+2. `git clone <복사한 Remote repository의 주소> <path>`로 clone
+3. `git commit -m "<commit msg>"`로 커밋 남기기
+4. `git branch -M main`으로 현재 branch의 이름을 main으로 변경
+5. `git status`로 현재 상태 확인 후 `git add .`로 변경파일 추가
+6. `git push origin main`으로 main에 로컬 변경사항 push
 
-Additional [sample posts](https://mmistakes.github.io/so-simple-theme/posts/) can be view on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs) folder.
+### 3. Jekyll 설치
+
+- [Ubuntu linux용 jekyll 가이드 참조](https://jekyllrb-ko.github.io/docs/installation/ubuntu/)
+  - 위 링크를 이용해서 Jekyll을 설치하기 전, 필요한 모든 의존요소를 가지고 있는지 확인하고 일반 사용자 계정에 젬 설치 디렉토리를 설정
+- Jekyll과 Bundler 설치
+  - `gem install jekyll bundler`
+- Jekyll이 올바르게 설치되었는지 확인
+  - `jekyll -v`
+
+### 4. Jekyll 사이트 생성
+
+- 현재 디렉토리(.)(=clone한 디렉토리)에 Jekyll을 설치
+  - `jekyll new . --force`
+- Jekyll 시작
+  - `bundle exec jekyll serve`
+  - localhost:4000 접속
+- **LoadError 발생 시 webrick 파일 설치**
+  - `bundle add webrick`
 
 ## Installation
 
