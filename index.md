@@ -15,3 +15,4 @@ layout: home
 
 - composing and writing lyrics for the hip-hop genre based on black music such as rap and R&B.
 - Baekjun problem solving in Java and Python languages.
+- Cookie baking.
